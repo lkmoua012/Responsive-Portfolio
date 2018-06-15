@@ -50,6 +50,10 @@ h3 {
   font-size: 22px;
 }
 
+li{
+  list-style: none;
+}
+
 /* header */
 
 #masthead {
@@ -214,18 +218,18 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+  margin-left: 40px;
 }
 
-/*Desktop Media*/
+/*Laptop Media*/
 
 @media (max-width: 980px){
 #masthead{
   position: static;
 }
 
-#main-container {
-  padding-top: 50px;
-  min-height: calc(100vh - 70px);
+#logo{
+  margin-left: 5%;
 }
 
 nav{
@@ -233,6 +237,23 @@ nav{
   text-align: right;
   font-size: 16px;
   padding-right: 20px;
+}
+
+#main-container {
+  min-height: calc(100vh - 70px);
+  padding: 2% 25% 5% 5%;
+  padding-right: 25%;
+}
+
+ul{
+  position:relative;
+  right: 5%;
+  width: 100%;
+}
+
+input[type=submit]{
+  position:relative;
+  right: 5%;
 }
 
 }
@@ -252,18 +273,36 @@ nav{
   padding-right: 20px;
 }
 
+h1{
+  line-height: 10px;
+  padding-bottom: 30px;
+}
+
 #main-container {
-  padding-top: 20px;
+  padding: 5%;
   min-height: calc(100vh - 70px);
 }
 
 .main-section {
   max-width: 768px;
+  font-size: 16px;
+  padding: 15px;
 }
 
 .auth-image {
   float: left;
   width: 50%;
+}
+
+ul{
+  position:relative;
+  right: 6%;
+  width: 100%;
+}
+
+input[type=submit]{
+  position:relative;
+  right: 6%;
 }
 
 }
@@ -272,18 +311,20 @@ nav{
 
 @media (max-width: 640px){
 #masthead{
-  position: relative;
   margin: auto;
+  padding-left:0px;
 }
 
 #logo{
   width:100%;
+  margin: 0;
 }
 
 nav{
   width: 100%;
   text-align: center;
   font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .auth-image {
@@ -294,7 +335,7 @@ nav{
 .main-section {
   float: left;
   width: 100%;
-  margin: auto;
+  margin: 5% 0 25% 0;
   height: 100%;
   padding: 15px;
   font-size: 16px;
@@ -304,6 +345,12 @@ nav{
   margin: auto;
   width:100%;
   padding-top: 10px;
+}
+
+ul{
+  position:relative;
+  right: 8%;
+  width: 100%;
 }
 
 .container{
